@@ -1,0 +1,11 @@
+.logo {
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5rem;
+  color: var(--tertiary-color);
+  background-color: var(--dark-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,27 @@
+:root {
+  --light-color: #f2ebe5;
+  --dark-color: #2b262d;
+  --primary-color: #490b3d;
+  --secondary-color: #bd1e51;
+  --tertiary-color: #f1b814;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--light-color);
+  background: var(--secondary-color);
+}
+
+::selection {
+  color: var(--light-color);
+  background: var(--secondary-color);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: medium;
+  font-weight: 500;
+  background-color: var(--light-color);
+  margin: 0;
+  padding: 0;
+}
