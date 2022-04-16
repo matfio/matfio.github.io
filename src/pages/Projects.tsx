@@ -3,7 +3,8 @@ import Card from "../components/Card";
 import Loader from "../components/Loader";
 
 interface GitProject{
-  name:string
+  name:string,
+  description:string
 }
 
 async function getProjects<T>(user: string): Promise<T> {
@@ -28,12 +29,15 @@ const Projects = ():JSX.Element => {
   }
 
   const elements = data.map((entry,i) => 
-    <Card title={entry.name} />
+    <Card 
+      title={entry.name} 
+      description={entry.description} 
+    />
   )
 
-  return <>
+  return <div className='projects-page'>
     {elements}
-  </>
+  </ div>
 };
 
 export default Projects;

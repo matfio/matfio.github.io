@@ -1,3 +1,5 @@
-const Footer = () => <div>Footer</div>;
+import './index.css'
+
+const Footer = () => <div className='footer'>Footer</div>;
 
 export default Footer;
