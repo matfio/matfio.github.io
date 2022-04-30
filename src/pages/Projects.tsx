@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
-import Card from "../components/Card";
 import Loader from "../components/Loader";
+import { Card, CardActionArea, CardContent, Grid } from "@mui/material";
+import { Box } from "@mui/system";
 
 interface GitProject{
   name:string,
-  description:string
+  description:string,
+  html_url: string
 }
 
 async function getProjects<T>(user: string): Promise<T> {
@@ -28,16 +30,28 @@ const Projects = ():JSX.Element => {
     return <Loader />;
   }
 
-  const elements = data.map((entry,i) => 
-    <Card 
-      title={entry.name} 
-      description={entry.description} 
-    />
+  const elements = data.map((entry,i) =>
+    <Grid key={i} item xs sx={{minWidth: '275px'}}>
+      <CardActionArea href={entry.html_url} target="_blank">
+        <Card variant="outlined">
+          <CardContent>
+            <h3>{entry.name}</h3>
+            <p>{entry.description}</p>
+          </CardContent>
+        </Card>
+      </CardActionArea>
+    </Grid>
   )
 
-  return <div className='projects-page'>
-    {elements}
-  </ div>
+  return (
+    <div className="projects-page">
+      <Box sx={{ flexGrow: 1 }}>
+        <Grid container spacing={3}>
+          {elements}
+        </Grid>
+      </Box>
+    </div>
+  );
 };
 
 export default Projects;

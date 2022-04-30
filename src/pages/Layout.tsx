@@ -10,10 +10,11 @@ const Layout = () => {
   return (
     <div className="Layout">
       <Topbar />
-      <About />
-      <Experience />
-      <Projects />
-      <Footer />
+      <div className="pages">
+        <About />
+        <Experience />
+        <Projects />
+      </div>
     </div>
   );
 };
