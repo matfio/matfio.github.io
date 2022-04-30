@@ -8,13 +8,12 @@ import Projects from './Projects';
 
 const Layout = () => {
   return (
-    <div className="Layout">
+    <div className="font-poppins">
       <Topbar />
-      <div className="pages">
-        <About />
-        <Experience />
-        <Projects />
-      </div>
+      <About />
+      <Experience />
+      <Projects />
+      
     </div>
   );
 };

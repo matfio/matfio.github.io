@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
+import Card from "../components/Card";
 import Loader from "../components/Loader";
-import { Card, CardActionArea, CardContent, Grid } from "@mui/material";
-import { Box } from "@mui/system";
 
 interface GitProject{
   name:string,
@@ -31,25 +30,12 @@ const Projects = ():JSX.Element => {
   }
 
   const elements = data.map((entry,i) =>
-    <Grid key={i} item xs sx={{minWidth: '275px'}}>
-      <CardActionArea href={entry.html_url} target="_blank">
-        <Card variant="outlined">
-          <CardContent>
-            <h3>{entry.name}</h3>
-            <p>{entry.description}</p>
-          </CardContent>
-        </Card>
-      </CardActionArea>
-    </Grid>
+    <Card key={i} title={entry.name} description={entry.description} link={entry.html_url} />
   )
 
   return (
-    <div className="projects-page">
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={3}>
-          {elements}
-        </Grid>
-      </Box>
+    <div className="m-8 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5">
+      {elements}
     </div>
   );
 };
