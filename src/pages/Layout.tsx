@@ -8,12 +8,11 @@ import Projects from './Projects';
 
 const Layout = () => {
   return (
-    <div className="font-poppins">
+    <div className='font-poppins'>
       <Topbar />
       <About />
       <Experience />
       <Projects />
-      
     </div>
   );
 };
