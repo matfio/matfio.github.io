@@ -7,7 +7,7 @@ export interface PageProps {
 }
 
 const Page = ({ className, children, style }: PageProps) => (
-  <div className={'min-h-90v ' + className} style={style}>
+  <div className={'min-h-90v mt-16 ' + className} style={style}>
     {children}
   </div>
 );

@@ -2,8 +2,8 @@ import Page from '../components/Page';
 import Row from '../components/Row';
 
 const Experience = () => (
-  <Page className='sm:mx-32 mx-8'>
-    <h1 className='sm:mt-24 mt-16'>My journey</h1>
+  <Page className='lg:mx-32 mx-8'>
+    <h1 className='lg:mt-24'>My journey</h1>
     <Row
       title='Clio'
       date='2020 - present'

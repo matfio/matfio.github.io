@@ -39,9 +39,9 @@ const Projects = (): JSX.Element => {
   ));
 
   return (
-    <Page className='sm:mx-32 mx-8'>
-      <h1 className='sm:mt-20 my-8'>Projects</h1>
-      <div className='grid lg:grid-cols-4 sm:grid-cols-2 lg:gap-4 sm:gap-8 gap-4'>
+    <Page className='lg:mx-32 mx-8'>
+      <h1 className='my-8'>Projects</h1>
+      <div className='grid lg:grid-cols-4 md:grid-cols-2 lg:gap-4 md:gap-8 gap-4'>
         {elements}
       </div>
     </Page>
