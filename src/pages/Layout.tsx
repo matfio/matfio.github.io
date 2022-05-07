@@ -8,7 +8,7 @@ import Projects from './Projects';
 
 const Layout = () => {
   return (
-    <div className='font-poppins'>
+    <div className='font-poppins mt-12'>
       <Topbar />
       <About />
       <Experience />

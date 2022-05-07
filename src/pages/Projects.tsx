@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Card from '../components/Card';
 import Loader from '../components/Loader';
+import Page from '../components/Page';
 
 interface GitProject {
   name: string;
@@ -38,9 +39,11 @@ const Projects = (): JSX.Element => {
   ));
 
   return (
-    <div className='m-8 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5'>
-      {elements}
-    </div>
+    <Page>
+      <div className='m-8 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5'>
+        {elements}
+      </div>
+    </Page>
   );
 };
 

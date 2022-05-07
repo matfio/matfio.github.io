@@ -1,23 +1,23 @@
+import Page from '../components/Page';
+
 const About = () => {
   return (
-    <div className='h-80v grid place-items-center'>
-      <div className='absolute p-4 bg-secondary/50 rounded-xl shadow-md shadow-black/50 flex-row'>
-        <div className='font-rubik text-5xl text-primary text-center'>
-          Mattia Fiorio
-        </div>
-        <div className='font-rubik text-5xl text-white text-center'>
-          Software developer
-        </div>
-        <div className='font-rubik text-5xl text-orange-500 text-center'>
+    <Page
+      className='bg-no-repeat bg-cover bg-right-top bg-fixed'
+      style={{
+        backgroundImage: `url(${
+          process.env.PUBLIC_URL + '/img/swizerland.jpg'
+        })`,
+      }}
+    >
+      <div className='absolute w-full h-full flex justify-center flex-col align-middle'>
+        <h1 className=' m-4 drop-shadow-lg'>Mattia Fiorio</h1>
+        <h1 className=' text-primary m-4 drop-shadow-lg'>Software developer</h1>
+        <h2 className=' text-orange-500 m-4 flex justify-center drop-shadow-lg'>
           Website in progress!
-        </div>
+        </h2>
       </div>
-      <img
-        className='h-full object-cover object-center'
-        src={process.env.PUBLIC_URL + '/img/singapore.jpg'}
-        alt='picture of me'
-      />
-    </div>
+    </Page>
   );
 };
 
