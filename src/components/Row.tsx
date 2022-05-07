@@ -10,15 +10,20 @@ export interface RowProps {
 
 const Row = ({ title, subTitle, date, imgSrc, children }: RowProps) => {
   return (
-    <div className='w-full rounded-sm shadow-md p-4 m-4 flex justify-center align-middle'>
-      <div className='grid grid-cols-3 gap-16'>
-        <div className='text-right pl-12'>
-          <img className='max-w-3xs mb-4 ml-auto' src={imgSrc} />
-          <h2>{title}</h2>
-          <div>{date}</div>
-          <div>{subTitle}</div>
+    <div className='md:rounded-sm md:shadow-md flex justify-center items-center my-4 py-4'>
+      <div className='grid sm:grid-cols-3 sm:gap-16 grid-cols-1'>
+        <div className='text-right sm:block grid grid-cols-3'>
+          <img
+            className='max-h-3xs max-w-3xs h-auto sm:my-4 sm:ml-auto'
+            src={imgSrc}
+          />
+          <div className='ml-auto col-span-2'>
+            <h2 className='break-all'>{title}</h2>
+            <div>{date}</div>
+            <div>{subTitle}</div>
+          </div>
         </div>
-        <div className='col-span-2 pr-12'>{children}</div>
+        <div className='col-span-2'>{children}</div>
       </div>
     </div>
   );
