@@ -4,7 +4,7 @@
 
 @layer base {
   h1 {
-    @apply font-rubik text-5xl text-secondary flex justify-center mb-4 mt-24 font-extrabold text-shadow-lg;
+    @apply font-rubik text-5xl text-secondary flex justify-center pb-16 pt-16 font-extrabold text-shadow-lg;
   }
 
   h2 {
@@ -13,5 +13,21 @@
 
   h3 {
     @apply font-rubik text-3xl text-secondary text-shadow-md;
+  }
+
+  ul {
+    list-style-type: square;
+  }
+
+  ul li {
+    position: relative;
+    padding: 0.5rem 0 0.5rem 0.125rem;
+  }
+
+  ul li::before {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2px;
+    left: 0;
   }
 }

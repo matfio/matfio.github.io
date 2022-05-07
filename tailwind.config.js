@@ -11,7 +11,7 @@ module.exports = {
         rubik: "'Rubik', serif",
         poppins: "'Poppins', serif",
       },
-      height: {
+      minHeight: {
         '10v': '10vh',
         '20v': '20vh',
         '30v': '30vh',
@@ -22,6 +22,12 @@ module.exports = {
         '80v': '80vh',
         '90v': '90vh',
         '100v': '100vh',
+      },
+      maxWidth: {
+        '3xs': '8rem',
+      },
+      maxHeight: {
+        '3xs': '8rem',
       },
     },
   },
