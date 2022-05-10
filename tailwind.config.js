@@ -26,10 +26,12 @@ module.exports = {
         '100v': '100vh',
       },
       maxWidth: {
-        '3xs': '8rem',
+        '2xs': '6rem',
+        xs: '8rem',
       },
       maxHeight: {
-        '3xs': '8rem',
+        '2xs': '6rem',
+        xs: '8rem',
       },
     },
   },

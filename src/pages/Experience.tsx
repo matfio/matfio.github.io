@@ -40,7 +40,7 @@ const Experience = () => (
     <Row
       title='MovieStarPlanet'
       date='2016 - 2020'
-      subTitle='Software development'
+      subTitle='Software developer'
       imgSrc={process.env.PUBLIC_URL + '/logos/msp.png'}
     >
       <ul>
@@ -78,7 +78,7 @@ const Experience = () => (
     <Row
       title='MovieStarPlanet'
       date='2013 - 2016'
-      subTitle='Junior Software development'
+      subTitle='Junior software developer'
       imgSrc={process.env.PUBLIC_URL + '/logos/msp.png'}
     >
       <ul>
