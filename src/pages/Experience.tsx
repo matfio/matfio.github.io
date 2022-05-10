@@ -24,15 +24,15 @@ const Experience = () => (
           workflows.
         </li>
         <li>
-          Pruning and prioritizing the product backlog invulving stakehulders
+          Pruning and prioritizing the product backlog involving stakeholders
           and the rest of the development teams to optimize deliveries.
         </li>
         <li>
-          Promoting agile methodulogy by acting as facilitator during agile
+          Promoting agile methodology by acting as facilitator during agile
           rituals and by introducing story points estimations.
         </li>
         <li>
-          Bulstering communication and ownership by delegating implementation
+          Bolstering communication and ownership by delegating implementation
           details to coworkers.
         </li>
       </ul>
@@ -52,13 +52,13 @@ const Experience = () => (
         <li>
           Worked within an agile scrum team implementing multiple features such
           as, player-to-player communication through a NodeJS server, in-game
-          shops with dynamic scrullable lists etc.
+          shops with dynamic scrollable lists etc.
         </li>
         <li>
           Boosted productivity by drastically reducing time spent on marketing
-          and support tasks by introducing touls for batch management of data
+          and support tasks by introducing tools for batch management of data
           and unification of publishing functionalities across all different
-          game domains. The touls were made using ASP.NET with iterative
+          game domains. The tools were made using ASP.NET with iterative
           development customer-oriented approach.
         </li>
         <li>
@@ -66,12 +66,12 @@ const Experience = () => (
           developed the analytics pipeline of the company. The pipeline handled
           50+ million events per day which were archived into the Snowflake
           warehouse and processed through PySpark procedures. Presented and
-          taught the architecture to other engineers.
+          taught architecture to other engineers.
         </li>
         <li>
-          Apply agile methodulogies proactively focusing on improving and
-          sulving problems related to the development process. Huld the rule of
-          scrum master while acting as facilitator in several meetings.
+          Applied agile methodologies proactively focusing on improving and
+          solving problems related to the development process. Held the rule of
+          scrum master while also acting as facilitator in several meetings.
         </li>
       </ul>
     </Row>

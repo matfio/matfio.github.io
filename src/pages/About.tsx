@@ -11,7 +11,7 @@ const About = () => {
       }}
     >
       <div className='h-full flex'>
-        <h1 className='relative text-primary pr-2 z-10'>
+        <h1 className='relative text-primary pr-2'>
           Hej! I'm
           <h1 className='absolute pr-2 pt-1 w-full'>Hej! I'm</h1>
         </h1>
