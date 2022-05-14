@@ -4,7 +4,8 @@
 
 @layer base {
   h1 {
-    @apply font-rubik text-secondary flex justify-center font-extrabold text-shadow-lg text-5xl;
+    @apply before:absolute before:content-[attr(data-content)] before:text-secondary before:pr-2 before:pt-1
+    font-rubik flex justify-center font-extrabold text-shadow-lg text-5xl text-primary pr-3;
   }
 
   h2 {

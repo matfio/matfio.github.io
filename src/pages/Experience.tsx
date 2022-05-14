@@ -3,7 +3,9 @@ import Row from '../components/Row';
 
 const Experience = () => (
   <Page className='lg:mx-32 mx-8'>
-    <h1 className='lg:mt-24'>My journey</h1>
+    <h1 data-content='My journey' className='lg:mt-24'>
+      My journey
+    </h1>
     <Row
       title='Clio'
       date='2020 - present'
@@ -62,7 +64,7 @@ const Experience = () => (
           development customer-oriented approach.
         </li>
         <li>
-          Conducted research about analytics best practices/technulogies and
+          Conducted research about analytics best practices/technologies and
           developed the analytics pipeline of the company. The pipeline handled
           50+ million events per day which were archived into the Snowflake
           warehouse and processed through PySpark procedures. Presented and
@@ -85,7 +87,7 @@ const Experience = () => (
         <li>
           Developed in-game features for a massively multiplayer game with more
           than 100 million users split between web browsers, android and iOS
-          devices. Fullowed design documents while introducing several UI and
+          devices. Followed design documents while introducing several UI and
           usability improvements to the user experience. Coded back-end robust
           and optimized C# .NET functionalities to retrieve and save data to
           support said features with particular attention to possible security
@@ -94,7 +96,7 @@ const Experience = () => (
         <li>
           Troubleshoot, debug and fix critical issues affecting millions of
           users. Deploy new versions of the product to countries all over the
-          world fullowing a continuous delivery strategy.
+          world following a continuous delivery strategy.
         </li>
       </ul>
     </Row>

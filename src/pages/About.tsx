@@ -11,12 +11,9 @@ const About = () => {
       }}
     >
       <div className='h-full flex'>
-        <h1 className='relative text-primary pr-2'>
-          Hej! I'm
-          <h1 className='absolute pr-2 pt-1 w-full'>Hej! I'm</h1>
-        </h1>
-        <h1 className='ml-2 text-primary'>
-          Mattia <h1 className='absolute text-orange-500 pr-2 pt-1'>Mattia</h1>
+        <h1 data-content="Hej, I'm">Hej, I'm</h1>
+        <h1 className="before:content-['Mattia'] before:text-orange-500">
+          Mattia
         </h1>
       </div>
     </Page>

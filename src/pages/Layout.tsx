@@ -13,6 +13,7 @@ const Layout = () => {
       <About />
       <Experience />
       <Projects />
+      <Footer />
     </div>
   );
 };

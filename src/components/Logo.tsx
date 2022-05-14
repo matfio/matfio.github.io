@@ -5,7 +5,9 @@ export interface LogoProps {
 const Logo = ({ className }: LogoProps) => {
   return (
     <div
-      className={'text-primary font-rubik cursor-default text-3xl ' + className}
+      className={
+        'text-orange-500 font-rubik cursor-default text-3xl ' + className
+      }
     >
       MF
     </div>
